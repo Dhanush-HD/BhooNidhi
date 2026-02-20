@@ -139,22 +139,22 @@
 
     /* Membership Plans background */
     #membership {
-      background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255)),
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
                    center/cover no-repeat;
-      color: #fff;
+      color: #000000;
       min-height: 60vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 80px 8%;
     }
-    #membership h2 { color: #fff; font-size: 2.4rem; }
+    #membership h2 { color: #000000; font-size: 2.4rem; }
     #membership ul { font-size: 1.2rem; max-width: 700px; }
     #membership li { margin-bottom: 12px; }
 
     /* RKAK section background */
     #rkak {
-      background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0)),
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
                   center/cover no-repeat;
       color: #000000;
       min-height: 60vh;
@@ -168,12 +168,12 @@
 
     /* Who We Are background */
     #about {
-      background: linear-gradient(rgb(58, 67, 57), rgb(0, 0, 0));
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
       /* url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover no-repeat; */
-      color: #fff;
+      color: #000000;
       padding: 80px 8%;
     }
-    #about h2 { color: #fff; }
+    #about h2 { color: #000000; }
 
     /* Our Work & Products background */
    /* ===== OUR WORK BLENDED SECTION ===== */
@@ -269,13 +269,12 @@ section {
 
     /* Franchise Opportunity background */
     #franchise {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url('franchise-opp.jpeg') center/cover no-repeat;
-      color: #fff;
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+      color: #000000;
       min-height: 55vh;
       padding: 80px 8%;
     }
-    #franchise h2 { color: #fff; }
+    #franchise h2 { color: #000000; }
 
     /* Contact Us background */
     #contact {
@@ -319,7 +318,7 @@ section {
     .mission-card:hover,
     .values-card:hover {
       transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 20px 40px rgb(205, 197, 197);
+      box-shadow: 0 20px 40px rgb(55, 53, 53);
     }
     .vision-card::before,
     .mission-card::before,
@@ -327,7 +326,7 @@ section {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgb(231, 224, 224);
+      background: rgb(255, 255, 255);
       border-radius: 12px;
     }
     /* .vision-card *, .mission-card *, .values-card * {
@@ -367,7 +366,7 @@ section {
       min-height: 85vh;
       display: flex;
       align-items: center;
-      background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0,0,0,0.35)),
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
   url('') center/cover no-repeat;
       color: #fff;
       padding: 0 8%;
@@ -400,8 +399,8 @@ section {
 
     /* Service & Support background */
     .services-bg {
-      background: linear-gradient(rgb(255, 255, 255), rgb(1, 1, 1));
-      color: #fff;
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+      color: #000000;
       min-height: 70vh;
       display: flex;
       flex-direction: column;
@@ -414,7 +413,7 @@ section {
       transform: scale(1.02);
       box-shadow: 0 22px 45px rgba(0,0,0,0.5);
     } */
-    .services-bg h2 { color: #fff; font-size: 2.5rem; margin-bottom: 30px; }
+    .services-bg h2 { color: #000000; font-size: 2.5rem; margin-bottom: 30px; }
     .services-bg ul {
       max-width: 700px;
       font-size: 1.2rem;
@@ -589,7 +588,7 @@ body {
 }
     .bn-eco{
   padding:120px 0;
-  background:#060606;
+  background:#ffffff;
   display:flex;
   justify-content:center;
   font-family:Segoe UI,Arial;
@@ -1799,7 +1798,7 @@ hr,
   align-items: center;
   justify-content: space-between;
   padding: 18px 32px;
-  border-bottom: 3px solid #d5e1d6;
+  border-bottom: 3px solid #ffffff;
 }
 .brand-title {
   font-size: 32px;
@@ -2158,7 +2157,7 @@ img[alt="BCH"] {
     padding: 18px;
     border-radius: 14px;
     background: #ffffff;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 25px rgb(255, 255, 255);
     font-size: 14px;
     text-align: center;
     z-index: 2;
@@ -2240,6 +2239,102 @@ section {
   margin: 0;
   line-height: 1.1;
 }
+
+/* ===== MEMBERSHIP CARDS ONLY ===== */
+
+.membership-card {
+  position: relative;
+  padding: 25px;
+  border-radius: 12px;
+  color: #fff;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Dark overlay */
+.membership-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  border-radius: 12px;
+}
+
+.membership-card * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Individual background */
+.individual-card {
+  background-image: url('ind-mem.jpg');
+}
+
+/* Family background */
+.family-card {
+  background-image: url('fam-mem.jpg');
+}
+
+/* ===== RKAK EXTRA SECTION ===== */
+
+#rkak-gallery {
+  background: #ffffff;
+  text-align: center;
+  padding: 80px 8%;
+}
+
+#rkak-gallery h2 {
+  font-size: 2.2rem;
+  color: #1b5e20;
+  margin-bottom: 40px;
+}
+
+.rkak-extra-image {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease;
+}
+
+.rkak-extra-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rkak-extra-image:hover {
+  transform: scale(1.03);
+}
+
+/* Moving Franchise Title */
+.franchise-moving-title {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveRight 12s linear infinite;
+}
+
+@keyframes moveRight {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100vw); }
+}
+body {
+  margin: 0;
+  font-family: 'Belleza', sans-serif;
+  font-size: larger;
+  line-height: 1.6;
+  color: #333;
+}
+
 
 </style>
 
@@ -2502,7 +2597,8 @@ window.addEventListener("scroll", function() {
   <div class="grid" style="margin-top:30px;">
 
     <!-- Individual Membership Card -->
-    <div class="vision-card" style="background-image:url('ind-mem.jpg');">
+   <div class="membership-card individual-card">
+
       <h3>Individual Membership</h3>
       <ul>
         <li>Exclusive benefits for individual farmers</li>
@@ -2520,7 +2616,8 @@ window.addEventListener("scroll", function() {
     </div>
 
     <!-- Family Membership Card -->
-    <div class="mission-card" style="background-image:url('fam-mem.jpg');">
+    <div class="membership-card family-card">
+
       <h3>Family Membership</h3>
       <ul>
         <li>Coverage & benefits for farmer families</li>
@@ -2568,7 +2665,21 @@ window.addEventListener("scroll", function() {
     display: block;
     object-fit: cover;
   }
+  
 </style>
+<!-- RKAK Additional Image Section -->
+<section id="franchise-gallery">
+  <h1 class="franchise-moving-title">BhooNidhi Franchise</h1>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+
+  <div class="rkak-extra-image">
+    <img src="franchise-opp.jpeg" alt="RKAK Support Activity">
+  </div>
+
+
+</section>
+
 
 <section id="franchise">
   <h2>Franchise Opportunity</h2>
@@ -2577,6 +2688,17 @@ window.addEventListener("scroll", function() {
     <li>Training & marketing support</li>
     <li>Recurring revenue</li>
   </ul>
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+
+  <style>/* ===== FRANCHISE PAGE ONLY FIX ===== */
+
+body.franchise-page h1,
+body.franchise-page h2 {
+  font-family: 'Belleza', sans-serif;
+}
+</style>
+
 </section>
 
 <section id="contact">
